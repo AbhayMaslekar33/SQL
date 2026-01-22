@@ -1,0 +1,3 @@
+-- Change Coloumn names
+-- To change column name use 
+Select <column> AS <New name>
