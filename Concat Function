@@ -1,0 +1,4 @@
+-- Combine columns together to form a common column
+Select Concat(column1, " ", column 2)
+-- Aswer will contain a row with add of col1 + col2) 
+
