@@ -1,0 +1,4 @@
+-- NULL is a special value. The value is unknown. 
+-- Use IS keyword instead of logical operators for NULL
+-- Null coalescing
+
