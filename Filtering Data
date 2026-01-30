@@ -1,0 +1,21 @@
+-- AND, OR, NOT functions
+
+
+Q) How many female customers do we have from the state of oregon or new york? 
+
+ans:
+SELECT * FROM public.customers 
+WHERE (state = 'OR' OR state = 'NY') AND gender = 'F'
+
+Q) can you do the same with not function?
+
+ SELECT * FROM public.customers 
+WHERE (state = 'OR' OR state = 'NY') AND NOT gender = 'M'
+
+Q) How many customers are not 55?
+
+ans:
+SELECT count("age") FROM public.customers 
+WHERE NOT "age" = 55 
+
+
