@@ -2,3 +2,7 @@
 Select Concat(column1, " ", column 2)
 -- Aswer will contain a row with add of col1 + col2) 
 
+Q) In Employee DB, concat first_name and last_name to create a new column called full_name
+
+Ans:
+SELECT concat(first_name, ' ',last_name) AS "Full_name" FROM employees
