@@ -1,3 +1,11 @@
 -- Change Coloumn names
 -- To change column name use 
 Select <column> AS <New name>
+
+Example:
+
+Q) In "Employees" DB, change column name "emp_no" to "Employee No"
+
+Ans:
+
+SELECT emp_no AS "Employee NO." FROM public.employees
