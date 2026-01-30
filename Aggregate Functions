@@ -1,2 +1,53 @@
 -- Math functions. Mostly to calculate sum, avg, min, max, count etc
 -- functions are name exactly as respresented above
+
+Q) In emplyees DB. How many employees are there in total?
+
+ans:
+SELECT count("emp_no") FROM employees
+
+Q) What is the highest salary?
+
+ans:
+SELECT max("salary") FROM public.salaries
+
+Q) Get total amount of salary paid?
+
+ans:
+SELECT sum("salary") FROM public.salaries
+
+Q) What is the average salary for the company?
+
+ans:
+SELECT avg("salary") FROM public.salaries
+
+-- Question 2: What year was the youngest person born in the company?
+-- Table: employees
+
+ans:
+SELECT min("birth_date") FROM public.employees
+
+-- BEFORE YOU START
+/*
+ * What database should I use for these exercises?
+ * Name: France
+ */
+-- 
+-- Question 1: How many towns are there in france?
+-- Table: Towns
+
+ans:
+SELECT count("id") FROM public.towns
+
+
+-- BEFORE YOU START
+/*
+ * What database should I use for these exercises?
+ * Name: World
+ */
+-- 
+-- Question 3: What is the average population for cities in the netherlands?
+-- Table: city
+
+SELECT avg(population) FROM public.country
+WHERE code = 'NLD'
